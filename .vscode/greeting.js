@@ -4,19 +4,24 @@ greeting = document.querySelector(".js-greetings");
 
 
 const USER_LS = "currentUser",
-SHOWWING
+SHOWWING_CN = "showing";
 
+function askForName (){
+    form.classList.add(SHOWING_CN)
+}
 function paintGreeting(text) {
-    greeting.classList.add()
-    greeting.innnerText = `Hello $(text)`
+    form.classList.remove(SHOWING_CN);
+    greeting.classList.add(SHOWING_CN);
+    greeting.innerText = `Hello $(text)`;
 
 }
 function loadName() {
     const querySelector = localStorage.getItem(USER_LS);
     if (currentUser === null) {
 
+
     } else {
-        paintGreeting()
+        paintGreeting(currentUser)
     }
 }
 
