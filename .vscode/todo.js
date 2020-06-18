@@ -1,8 +1,6 @@
-const todoForm = document.querySelector(".js-toDoForm"),
-
-  toDoInput = todoForm.querySelector("input"),
-
-  toDoList = document.querySelector(".js-toDoList");
+ const todoForm = document.querySelector(".js-toDoForm"),
+    toDoInput = todoForm.querySelector("input"),
+    toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
 
@@ -14,7 +12,7 @@ const toDos = [];
 
 
 function deleteToDo(event) {
-   const btn = event.target,;
+   const btn = event.target;
     const li = btn.ParentNode;
     toDoList.removeChild(li);
     const clearnToDos = toDos.filter(function(todo){

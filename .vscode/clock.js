@@ -1,6 +1,6 @@
-"use strict";
-const clockContainer = document.querySelector("js-clock");
-const clockTitle = document.querySelector("h1");
+'use strict';
+const clockContainer = document.querySelector('js-clock');
+const clockTitle = document.querySelector('h1');
 
 function getTime() {
   const date = new Date();
